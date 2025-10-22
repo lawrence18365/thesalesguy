@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Lee Marshall - The Sales Guy. 10+ years of B2B sales experience, coaching sales teams across Australia to master cold calling and book quality meetings.">
+    <title>About Lee Marshall - The Sales Guy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* About-specific styles */
+        .about-hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #1a1a1a 100%);
+            color: white;
+            padding: 160px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at top, rgba(0, 214, 107, 0.12) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: -1.8px;
+            line-height: 1.2;
+        }
+
+        .about-hero .tagline {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .about-hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .about-intro {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .about-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-intro-content h2 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 28px;
+            color: var(--secondary-color);
+            letter-spacing: -1.2px;
+            line-height: 1.2;
+        }
+
+        .about-intro-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .about-intro-content .highlight {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        .about-image {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 60px;
+            text-align: center;
+            border: 3px solid var(--primary-color);
+        }
+
+        .about-image i {
+            font-size: 200px;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        .experience-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .experience-section h2 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            letter-spacing: -1.5px;
+        }
+
+        .experience-section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 5px;
+            background: var(--primary-color);
+            margin: 30px auto 60px;
+            border-radius: 3px;
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .experience-title {
+            flex: 1;
+        }
+
+        .experience-title h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--secondary-color);
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .experience-company {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+        }
+
+        .experience-duration {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .experience-description {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .stats-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #000000 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .mission-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .mission-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .mission-content h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 32px;
+            color: var(--secondary-color);
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+
+        .mission-content p {
+            font-size: 22px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .mission-content .mission-highlight {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 40px;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 24px;
+            color: var(--secondary-color);
+            letter-spacing: -1.5px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .about-hero h1 {
+                font-size: 38px;
+            }
+
+            .about-hero .tagline {
+                font-size: 20px;
+            }
+
+            .about-intro-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .about-intro-content h2 {
+                font-size: 32px;
+            }
+
+            .about-image {
+                padding: 40px;
+            }
+
+            .about-image i {
+                font-size: 120px;
+            }
+
+            .experience-section h2,
+            .mission-content h2,
+            .cta-section h2 {
+                font-size: 36px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .stat-number {
+                font-size: 42px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">THE SALES GUY</span>
+                    </a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="library.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+                </ul>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="library.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="mobile-contact">
+                    <a href="tel:0478409161" class="mobile-phone">
+                        <i class="fas fa-phone"></i> 0478 409 161
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn btn-primary btn-mobile">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Floating Call Button -->
+    <a href="tel:0478409161" class="floating-call-button" aria-label="Call us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <div class="tagline">Make Australia Cold Call Again</div>
+                <h1>Meet Lee Marshall</h1>
+                <p>Sales coach, cold calling expert, and founder of The Sales Guy. 10+ years helping B2B teams sound like they belong on the phone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Intro -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="about-intro-grid">
+                <div class="about-intro-content">
+                    <h2>The Truth About Cold Calling</h2>
+                    <p>I've been in the trenches. I've made thousands of cold calls, dealt with every objection under the sun, and hit targets month after month in some of the toughest sales environments.</p>
+                    <p>I've seen what works and what doesn't. I've trained junior reps who were terrified of the phone and watched them become top performers. I've coached senior salespeople to level up their game.</p>
+                    <p>Now, I'm on a mission to get Australian sales teams back on the phone - confidently, strategically, and with the skills to actually book meetings that show up.</p>
+                    <p class="highlight">Do your sales team make calls that go nowhere? Can't get past the intro? Pitching and begging for meetings? Let's have a chat.</p>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years in B2B Sales</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Clients Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$1M+</span>
+                    <span class="stat-label">Annual Premium Issued</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">B2B Focused</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <h2>Experience That Counts</h2>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Founder</h3>
+                            <div class="experience-company">The Sales Guy</div>
+                        </div>
+                        <div class="experience-duration">Sep 2025 - Present</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Coaching sales teams how to cold call, sound like they belong, and get invited in. Working with B2B companies across all sectors to transform their SDR performance and build teams that actually use the phone.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Strategic Partnership Manager</h3>
+                            <div class="experience-company">Expert Wealth</div>
+                        </div>
+                        <div class="experience-duration">Feb 2025 - Aug 2025 · 7 mos</div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Head of Sales</h3>
+                            <div class="experience-company">Knowledge Shop</div>
+                        </div>
+                        <div class="experience-duration">Jul 2022 - Oct 2023 · 1 yr 4 mos</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Led sales strategy and team development for Knowledge Shop, a resource and knowledge management company for accounting firms. Served over 1000 accounting practices across Australia, identifying business concerns and improving internal efficiencies.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Business Development Manager</h3>
+                            <div class="experience-company">Knowledge Shop</div>
+                        </div>
+                        <div class="experience-duration">Jul 2018 - Sep 2022 · 4 yrs 3 mos</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>As chief acquirer for Knowledge Shop, serviced the needs of accountants across Australia. Built and maintained relationships with over 1000 accounting practices, providing expertise and resources to improve their business operations.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Senior Sales Consultant + Sales Coach</h3>
+                            <div class="experience-company">BlueInc Group</div>
+                        </div>
+                        <div class="experience-duration">Apr 2014 - Oct 2016 · 2 yrs 7 mos</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Sold life/funeral insurance in an outbound call centre environment to hot, warm, and cold leads. Consistently achieved targets over 2.5 years, issuing over $1,000,000 AUD in annual premium. Initiated coaching sessions for both junior and senior team members to increase knowledge and productivity.</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Underwritten Life Sales Manager</h3>
+                            <div class="experience-company">BlueInc Group</div>
+                        </div>
+                        <div class="experience-duration">Jun 2017 - Jul 2018 · 1 yr 2 mos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <h2>Why The Sales Guy Exists</h2>
+                <p>Too many sales teams are hiding behind LinkedIn InMails and emails because they're scared of the phone. They've never been taught how to cold call properly - how to sound confident, handle objections, and qualify prospects.</p>
+                <p>The result? Pipelines full of rubbish leads, meetings that don't show up, and reps who feel like failures.</p>
+                <p>I started The Sales Guy to change that. No corporate fluff. No boring PowerPoints. Just real training that gives your team the skills and confidence to pick up the phone and get results.</p>
+                <p class="mission-highlight">Make Australia Cold Call Again.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready To Transform Your Sales Team?</h2>
+            <p>Let's have a chat about how we can get your team confidently making calls that actually convert.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary btn-large">Book a Consultation</a>
+                <a href="tel:0478409161" class="btn btn-secondary btn-large">Call 0478 409 161</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Talk</h2>
+                    <p>Book a free consultation to discuss how we can transform your sales team's performance.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <strong>Phone:</strong>
+                            <a href="tel:0478409161">0478 409 161</a>
+                        </div>
+                        <div class="contact-detail">
+                            <strong>Email:</strong>
+                            <a href="mailto:lee@thesalesguy.com.au">lee@thesalesguy.com.au</a>
+                        </div>
+                        <div class="contact-detail">
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/lee-marshall-823561130" target="_blank">Connect with Lee</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Business Position *</label>
+                            <input type="text" id="position" name="position" placeholder="e.g., Sales Director, CEO" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div id="form-status" class="form-status"></div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h3>THE SALES GUY</h3>
+                    <p>Expert sales training for B2B teams. We get your SDRs on the phone, handling objections, and booking meetings that show up.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/lee-marshall-823561130" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="companies.html">For Companies</a></li>
+                        <li><a href="individuals.html">For Individuals</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="library.html">Blog & Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="companies.html#sdr-training">SDR Team Training</a></li>
+                        <li><a href="companies.html#cold-calling">Cold Calling Coaching</a></li>
+                        <li><a href="companies.html#objection">Objection Handling</a></li>
+                        <li><a href="individuals.html#coaching">1-on-1 Coaching</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:0478409161">0478 409 161</a>
+                        </li>
+                        <li>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:lee@thesalesguy.com.au">lee@thesalesguy.com.au</a>
+                        </li>
+                        <li>
+                            <strong>Based in:</strong><br>
+                            Australia (Worldwide Services)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 The Sales Guy. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
