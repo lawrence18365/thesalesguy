@@ -66,6 +66,36 @@
             background: white;
         }
 
+        .about-intro-centered {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-intro-centered h2 {
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 28px;
+            color: var(--secondary-color);
+            letter-spacing: -1.2px;
+            line-height: 1.2;
+        }
+
+        .about-intro-centered p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .about-intro-centered .highlight {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
         .about-intro-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -306,6 +336,10 @@
                 font-size: 20px;
             }
 
+            .about-intro-centered h2 {
+                font-size: 32px;
+            }
+
             .about-intro-grid {
                 grid-template-columns: 1fr;
                 gap: 50px;
@@ -364,6 +398,7 @@
                     <li><a href="sdr.html">SDR</a></li>
                     <li><a href="ae.html">AE</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
                 </ul>
@@ -385,6 +420,7 @@
             </button>
             <ul class="mobile-nav-menu">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="sdr.html">SDR</a></li>
                 <li><a href="ae.html">AE</a></li>
                 <li><a href="resources.html">Resources</a></li>
@@ -412,7 +448,6 @@
             <div class="about-hero-content">
                 <div class="tagline">Make Australia Cold Call Again</div>
                 <h1>About Me</h1>
-                <p>I didn't choose to spend my life cold calling. Cold calling chose me.</p>
             </div>
         </div>
     </section>
@@ -420,41 +455,44 @@
     <!-- About Intro -->
     <section class="about-intro">
         <div class="container">
-            <div class="about-intro-grid">
-                <div class="about-intro-content">
-                    <h2>My Story</h2>
-                    <p>After graduating university in the UK and with the urge to travel, I decided to book a one-way ticket to Australia on a working holiday visa. After spending my life savings in a few short weeks, I needed a job. New to the country, little life experience and skills, I thought to myself, who are companies always looking for? Salespeople. No barriers to entry and as an extrovert, it took me all of one interview to land myself a job.</p>
-                    <p>I spent the next year cold calling, selling funeral insurance. 200 dials, every day, without fail. Very little warm or inbound leads.</p>
-                    <p>After spending a year in Australia, I decided that Australia was to be my home. Upon sponsorship, I was hit with "to stay here we need $50,000 a month in sales". The choice was simple, sell, get a new sponsor and spend a fortune on a visa or go back to the UK. I had to get good at cold calling.</p>
-                    <p>And this is where I really started to seek support. This education was worth more than my degree ever was. After years of cold calling, building and training sales teams, I decided to help those that get little support, training or help. Sales is sink or swim for many.</p>
-                    <p>I'm now a citizen of Australia, and my goal of calling this country my home has been achieved. While others may seem sales as "just a job", remember it's a vehicle that will decide the life you live.</p>
-                    <p class="highlight">Would you rather sink or invest in yourself?</p>
-                </div>
-                <div class="about-image">
-                    <i class="fas fa-user-tie"></i>
-                </div>
+            <div class="about-intro-centered">
+                <h2>About Me</h2>
+                <p>I didn't choose to spend my life cold calling. Cold calling chose me.</p>
+
+                <p>After graduating university in the UK and with the urge to travel, I decided to book a one-way ticket to Australia on a working holiday visa. After spending my life savings in a few short weeks, I needed a job. New to the country, little life experience and skills, I thought to myself, who are companies always looking for? Salespeople. No barriers to entry and as an extrovert, it took me all of one interview to land myself a job.</p>
+
+                <p>I spent the next year cold calling, selling funeral insurance. 200 dials, every day, without fail. Very little warm or inbound leads.</p>
+
+                <p>After spending a year in Australia, I decided that Australia was to be my home. Upon sponsorship, I was hit with "to stay here we need $50,000 a month in sales". The choice was simple, sell, get a new sponsor and spend a fortune on a visa or go back to the UK. I had to get good at cold calling.</p>
+
+                <p>And this is where I really started to seek support. This education was worth more than my degree ever was. After years of cold calling, building and training sales teams, I decided to help those that get little support, training or help. Sales is sink or swim for many.</p>
+
+                <p>I'm now a citizen of Australia, and my goal of calling this country my home has been achieved. While others may seem sales as "just a job", remember it's a vehicle that will decide the life you live.</p>
+
+                <p class="highlight">Would you rather sink or invest in yourself?</p>
             </div>
         </div>
     </section>
+
 
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <span class="stat-number">10+</span>
+                    <span class="stat-number" data-target="10" data-suffix="+">0+</span>
                     <span class="stat-label">Years in B2B Sales</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">1000+</span>
+                    <span class="stat-number" data-target="1000" data-suffix="+">0+</span>
                     <span class="stat-label">Clients Served</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">$1M+</span>
+                    <span class="stat-number" data-target="1" data-prefix="$" data-suffix="M+">$0M+</span>
                     <span class="stat-label">Annual Premium Issued</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">100%</span>
+                    <span class="stat-number" data-target="100" data-suffix="%">0%</span>
                     <span class="stat-label">B2B Focused</span>
                 </div>
             </div>
@@ -685,5 +723,91 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <!-- Stats Counter Animation -->
+    <script>
+        (function() {
+            // Easing function for smooth, premium animation
+            function easeOutExpo(t) {
+                return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+            }
+
+            // Counter animation function
+            function animateCounter(element) {
+                const target = parseFloat(element.dataset.target);
+                const prefix = element.dataset.prefix || '';
+                const suffix = element.dataset.suffix || '';
+                const duration = 2500; // 2.5 seconds for premium feel
+                const startTime = performance.now();
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+
+                    // Apply easing for smooth acceleration/deceleration
+                    const easedProgress = easeOutExpo(progress);
+                    const currentValue = target * easedProgress;
+
+                    // Format the number based on its value
+                    let displayValue;
+                    if (target >= 1000) {
+                        displayValue = Math.floor(currentValue).toLocaleString();
+                    } else if (target < 10) {
+                        displayValue = currentValue.toFixed(1);
+                    } else {
+                        displayValue = Math.floor(currentValue);
+                    }
+
+                    element.textContent = prefix + displayValue + suffix;
+
+                    // Continue animation if not finished
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        // Ensure final value is exactly the target
+                        if (target >= 1000) {
+                            element.textContent = prefix + target.toLocaleString() + suffix;
+                        } else {
+                            element.textContent = prefix + target + suffix;
+                        }
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+            }
+
+            // Intersection Observer to trigger animation when visible
+            const statsObserverOptions = {
+                threshold: 0.5, // Trigger when 50% visible
+                rootMargin: '0px'
+            };
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumbers = entry.target.querySelectorAll('.stat-number');
+
+                        // Stagger animation slightly for premium effect
+                        statNumbers.forEach((statNumber, index) => {
+                            setTimeout(() => {
+                                animateCounter(statNumber);
+                            }, index * 100); // 100ms delay between each counter
+                        });
+
+                        // Unobserve after animation triggered
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, statsObserverOptions);
+
+            // Start observing when DOM is ready
+            document.addEventListener('DOMContentLoaded', () => {
+                const statsSection = document.querySelector('.stats-section');
+                if (statsSection) {
+                    statsObserver.observe(statsSection);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
