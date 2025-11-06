@@ -72,14 +72,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // Hide header on scroll down, show on scroll up
 function initHideOnScroll() {
     const header = document.querySelector('.site-header');
+    if (!header) return;
+
     let lastScrollTop = 0;
-    let scrollThreshold = 100;
+    // Hide header after scrolling 100px to avoid flickering on small movements
+    const SCROLL_THRESHOLD_PX = 100;
 
     window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         // Only hide header after scrolling past threshold
-        if (scrollTop > scrollThreshold) {
+        if (scrollTop > SCROLL_THRESHOLD_PX) {
             if (scrollTop > lastScrollTop) {
                 // Scrolling down - hide header
                 header.classList.add('header-hidden');
@@ -163,7 +166,6 @@ function initMobileMenu() {
         mobileClose.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('Close button clicked');
             closeMobileMenu();
         });
 
@@ -171,13 +173,8 @@ function initMobileMenu() {
         mobileClose.addEventListener('touchend', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('Close button touched');
             closeMobileMenu();
         });
-
-        console.log('Mobile close button initialized');
-    } else {
-        console.error('Mobile close button not found!');
     }
 
     // Close mobile menu - clicking overlay background
@@ -214,18 +211,25 @@ function initTimelineAnimations() {
         return;
     }
 
+    // Stagger animation delay for visual effect
+    const ANIMATION_STAGGER_DELAY_MS = 100;
+    // Trigger animation when 20% of element is visible
+    const VISIBILITY_THRESHOLD = 0.2;
+    // Bottom margin to trigger animations slightly before element enters viewport
+    const TRIGGER_MARGIN = '0px 0px -50px 0px';
+
     const timelineObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // Add a slight delay for smoother staggered effect
                 setTimeout(() => {
                     entry.target.classList.add('timeline-animate');
-                }, 100);
+                }, ANIMATION_STAGGER_DELAY_MS);
             }
         });
     }, {
-        threshold: 0.2,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: VISIBILITY_THRESHOLD,
+        rootMargin: TRIGGER_MARGIN
     });
 
     timelineItems.forEach(item => {
@@ -233,17 +237,20 @@ function initTimelineAnimations() {
     });
 }
 
-// Add animation on scroll
+// Add animation on scroll using class-based approach for better performance
+const SCROLL_ANIMATION_THRESHOLD = 0.1;
+const SCROLL_ANIMATION_MARGIN = '0px 0px -50px 0px';
+
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: SCROLL_ANIMATION_THRESHOLD,
+    rootMargin: SCROLL_ANIMATION_MARGIN
 };
 
 const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            // Use class instead of direct style manipulation for better performance
+            entry.target.classList.add('animate-in');
         }
     });
 }, observerOptions);
@@ -252,9 +259,8 @@ const observer = new IntersectionObserver(function(entries) {
 document.addEventListener('DOMContentLoaded', function() {
     const animatedElements = document.querySelectorAll('.problem-card, .feature, .faq-item, .standout-item');
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        // Add animation-ready class to set initial state
+        el.classList.add('animate-ready');
         observer.observe(el);
     });
 });
