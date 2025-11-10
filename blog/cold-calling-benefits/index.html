@@ -916,29 +916,43 @@
             submitBtn.textContent = 'Subscribing...';
 
             try {
-                // Use no-cors mode - we don't read the response, just send the data
-                await fetch(NEWSLETTER_WEBHOOK, {
+                // Send POST request with proper headers (CORS now enabled on Apps Script)
+                const response = await fetch(NEWSLETTER_WEBHOOK, {
                     method: 'POST',
-                    mode: 'no-cors',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email: email })
                 });
 
-                // Show success message
-                statusEl.className = 'newsletter-status success';
-                statusEl.textContent = '✓ Thanks! You\'re on the list. Check your inbox for weekly sales insights.';
-                this.reset();
+                // Parse JSON response
+                const data = await response.json();
 
-                // Hide message after 5 seconds
+                if (data.status === 'success') {
+                    // Show success message
+                    statusEl.className = 'newsletter-status success';
+                    statusEl.textContent = '✓ Thanks! You\'re on the list. Check your inbox for weekly sales insights.';
+                    this.reset();
+                } else if (data.status === 'duplicate') {
+                    // Already subscribed
+                    statusEl.className = 'newsletter-status success';
+                    statusEl.textContent = '✓ You\'re already on the list! Look out for our weekly emails.';
+                    this.reset();
+                } else {
+                    // Error response from server
+                    statusEl.className = 'newsletter-status error';
+                    statusEl.textContent = '✗ ' + (data.message || 'Something went wrong. Please try again.');
+                }
+
+                // Hide message after 6 seconds
                 setTimeout(() => {
                     statusEl.className = 'newsletter-status';
                     statusEl.textContent = '';
-                }, 5000);
+                }, 6000);
 
             } catch (error) {
-                // Show error message
+                // Show error message for network/fetch errors
                 statusEl.className = 'newsletter-status error';
-                statusEl.textContent = '✗ Something went wrong. Please try again.';
+                statusEl.textContent = '✗ Connection error. Please check your internet and try again.';
+                console.error('Newsletter signup error:', error);
             } finally {
                 // Re-enable button
                 submitBtn.disabled = false;
