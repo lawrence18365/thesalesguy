@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://thesalesguy.com.au/</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,14 +15,14 @@
     <!-- Service Pages -->
     <url>
         <loc>https://thesalesguy.com.au/sdr.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://thesalesguy.com.au/ae.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -30,43 +30,44 @@
     <!-- About & Resources -->
     <url>
         <loc>https://thesalesguy.com.au/about.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://thesalesguy.com.au/resources.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 
-    <!-- Blog -->
+    <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
+    <!-- Blog Posts -->
     <url>
         <loc>https://thesalesguy.com.au/blog-4-life-changing-benefits-cold-calling.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-01-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://thesalesguy.com.au/blog-overcome-call-reluctance.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
         <loc>https://thesalesguy.com.au/blog-stop-chasing-vanity-metrics.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -74,14 +75,14 @@
     <!-- Legal Pages -->
     <url>
         <loc>https://thesalesguy.com.au/privacy.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
 
     <url>
         <loc>https://thesalesguy.com.au/terms.html</loc>
-        <lastmod>2025-01-01</lastmod>
+        <lastmod>2025-11-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
