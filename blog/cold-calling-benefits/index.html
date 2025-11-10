@@ -460,6 +460,30 @@
             box-shadow: 0 10px 25px rgba(0, 214, 107, 0.3);
         }
 
+        .newsletter-status {
+            margin-top: 20px;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            display: none;
+        }
+
+        .newsletter-status.success {
+            background: rgba(0, 214, 107, 0.15);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            display: block;
+        }
+
+        .newsletter-status.error {
+            background: rgba(255, 59, 48, 0.15);
+            color: #ff3b30;
+            border: 2px solid #ff3b30;
+            display: block;
+        }
+
         /* Responsive */
         @media (max-width: 968px) {
             .article-hero {
@@ -746,9 +770,10 @@
                 <h2>Get Weekly Sales Insights</h2>
                 <p>Join sales leaders and SDR managers getting straight-talking advice every week. No fluff, just actionable tips you can use immediately.</p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
                 </form>
+                <div class="newsletter-status" id="newsletter-status"></div>
             </div>
         </div>
     </section>
@@ -878,11 +903,47 @@
     <script src="../../js/main.js"></script>
     <script>
         // Newsletter form submission
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+        const NEWSLETTER_WEBHOOK = 'https://script.google.com/macros/s/AKfycbypBFbJIU-gbgo35YB4Dk6EvJG_T6uTzLCcTX2feMM6MP8NBbKB41Z0l7mPQfWEtsaq/exec';
+
+        document.querySelector('.newsletter-form').addEventListener('submit', async function(e) {
             e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            alert('Thanks for subscribing! You\'ll receive weekly sales insights at ' + email);
-            this.reset();
+            const email = this.querySelector('input[name="email"]').value;
+            const statusEl = document.getElementById('newsletter-status');
+            const submitBtn = this.querySelector('button[type="submit"]');
+
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+
+            try {
+                // Use no-cors mode - we don't read the response, just send the data
+                await fetch(NEWSLETTER_WEBHOOK, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email })
+                });
+
+                // Show success message
+                statusEl.className = 'newsletter-status success';
+                statusEl.textContent = '✓ Thanks! You\'re on the list. Check your inbox for weekly sales insights.';
+                this.reset();
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    statusEl.className = 'newsletter-status';
+                    statusEl.textContent = '';
+                }, 5000);
+
+            } catch (error) {
+                // Show error message
+                statusEl.className = 'newsletter-status error';
+                statusEl.textContent = '✗ Something went wrong. Please try again.';
+            } finally {
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Subscribe';
+            }
         });
     </script>
 
