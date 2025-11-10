@@ -327,6 +327,44 @@
             transform: translateX(-4px);
         }
 
+        /* Breadcrumbs */
+        .breadcrumbs {
+            padding: 24px 0;
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .breadcrumb-list {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb-list a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-list a:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-light);
+            opacity: 0.5;
+        }
+
+        .breadcrumb-current {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
         /* Newsletter CTA */
         .newsletter-cta {
             padding: 100px 0;
@@ -550,13 +588,16 @@
         </div>
     </section>
 
-    <!-- Back to Blog -->
-    <section class="back-to-blog">
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
         <div class="container">
-            <a href="/blog/" class="back-link">
-                <i class="fas fa-arrow-left"></i>
-                Back to Blog
-            </a>
+            <nav class="breadcrumb-list" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="/blog/">Blog</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">The High Road to Sales</span>
+            </nav>
         </div>
     </section>
 
@@ -938,6 +979,34 @@
         "keywords": "CEO cold calling, sales strategy, B2B sales, cold calling 2025, executive outreach, SDR training, sales prospecting, go high strategy, warm referrals, sales coaching Australia",
         "articleSection": "Sales Strategy",
         "inLanguage": "en-AU"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://thesalesguy.com.au/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://thesalesguy.com.au/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "The High Road to Sales: Why Aiming for the Top Still Wins in 2025",
+                "item": "https://thesalesguy.com.au/blog/aim-high-cold-calling-strategy/"
+            }
+        ]
     }
     </script>
 </body>
