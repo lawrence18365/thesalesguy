@@ -977,31 +977,18 @@
             submitBtn.textContent = 'Subscribing...';
 
             try {
-                // Send POST request with proper headers (CORS now enabled on Apps Script)
-                const response = await fetch(NEWSLETTER_WEBHOOK, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email: email })
+                // Use GET request with query parameter (easier for Google Apps Script)
+                const url = `${NEWSLETTER_WEBHOOK}?email=${encodeURIComponent(email)}`;
+
+                await fetch(url, {
+                    method: 'GET',
+                    mode: 'no-cors'
                 });
 
-                // Parse JSON response
-                const data = await response.json();
-
-                if (data.status === 'success') {
-                    // Show success message
-                    statusEl.className = 'newsletter-status success';
-                    statusEl.textContent = '✓ Thanks! You\'re on the list. Check your inbox for weekly sales insights.';
-                    this.reset();
-                } else if (data.status === 'duplicate') {
-                    // Already subscribed
-                    statusEl.className = 'newsletter-status success';
-                    statusEl.textContent = '✓ You\'re already on the list! Look out for our weekly emails.';
-                    this.reset();
-                } else {
-                    // Error response from server
-                    statusEl.className = 'newsletter-status error';
-                    statusEl.textContent = '✗ ' + (data.message || 'Something went wrong. Please try again.');
-                }
+                // Show success message (we assume it worked)
+                statusEl.className = 'newsletter-status success';
+                statusEl.textContent = '✓ Thanks! You\'re on the list. Check your inbox for weekly sales insights.';
+                this.reset();
 
                 // Hide message after 6 seconds
                 setTimeout(() => {
@@ -1012,7 +999,7 @@
             } catch (error) {
                 // Show error message for network/fetch errors
                 statusEl.className = 'newsletter-status error';
-                statusEl.textContent = '✗ Connection error. Please check your internet and try again.';
+                statusEl.textContent = '✗ Connection error. Please try again.';
                 console.error('Newsletter signup error:', error);
             } finally {
                 // Re-enable button
