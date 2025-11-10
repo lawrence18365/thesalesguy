@@ -737,7 +737,11 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="89e32124-1bb3-432d-b24b-080286193acb">
+                        <input type="hidden" name="subject" value="New Contact Form Submission from The Sales Guy">
+                        <input type="hidden" name="from_name" value="The Sales Guy Website">
+
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>
