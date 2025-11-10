@@ -1,0 +1,27 @@
+# Netlify/Cloudflare Pages Redirects Configuration
+# This file handles URL migration from .html to clean URLs
+# Upload this file to your site root
+
+# Service pages - redirect old .html URLs to keyword-rich clean URLs
+/sdr.html                                            /sdr-sales-training/                            301
+/ae.html                                              /account-executive-training/                    301
+
+# Content pages
+/about.html                                           /about/                                          301
+/resources.html                                       /resources/                                      301
+/blog.html                                            /blog/                                           301
+
+# Blog posts - move to /blog/ folder with clean slugs
+/blog-4-life-changing-benefits-cold-calling.html      /blog/cold-calling-benefits/                   301
+/blog-overcome-call-reluctance.html                   /blog/overcome-call-reluctance/                301
+/blog-stop-chasing-vanity-metrics.html                /blog/stop-chasing-vanity-metrics/             301
+
+# Legal pages
+/privacy.html                                         /privacy/                                        301
+/terms.html                                           /terms/                                          301
+
+# Generic rule: remove .html extension from all other URLs
+/:page.html                                           /:page/                                          301
+
+# Trailing slash enforcement (optional - ensures consistency)
+/* /:splat/ 301!
