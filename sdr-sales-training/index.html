@@ -178,6 +178,126 @@
             color: var(--text-light);
         }
 
+        .pricing-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .pricing-section h2 {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 900;
+            color: var(--secondary-color);
+            margin-bottom: 60px;
+            letter-spacing: -1.2px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 16px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 3px solid transparent;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary-color);
+            position: relative;
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .pricing-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--secondary-color);
+            margin-bottom: 12px;
+            letter-spacing: -0.8px;
+        }
+
+        .pricing-subtitle {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 40px;
+            flex-grow: 1;
+        }
+
+        .pricing-features li {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-features li i {
+            color: var(--primary-color);
+            font-size: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .pricing-cta {
+            text-align: center;
+        }
+
+        .pricing-cta .btn {
+            width: 100%;
+            padding: 18px 30px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
         /* Responsive */
         @media (max-width: 968px) {
             .sdr-hero h1 {
@@ -189,8 +309,13 @@
             }
 
             .sdr-intro h2,
-            .what-you-learn h2 {
+            .what-you-learn h2,
+            .pricing-section h2 {
                 font-size: 32px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -282,59 +407,149 @@
             <h2>What You'll Learn</h2>
             <div class="learn-grid">
                 <div class="learn-card">
-                    <i class="fas fa-search"></i>
-                    <h3>Audit</h3>
-                    <p>A look at what is currently happening and being said on the phone.</p>
-                </div>
-                <div class="learn-card">
                     <i class="fas fa-brain"></i>
-                    <h3>The Psychology Behind Making Dials</h3>
-                    <p>What makes cold calling so difficult and how to overcome the fear?</p>
+                    <h3>Psychology of Dialing</h3>
+                    <p>Overcome call reluctance and mental barriers. Build the confidence to make high-volume dials consistently.</p>
                 </div>
                 <div class="learn-card">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Cold Calling Introduction</h3>
-                    <p>How to introduce yourself and minimise hang ups. The power of a pattern interrupt.</p>
+                    <i class="fas fa-phone-volume"></i>
+                    <h3>Cold Call Structure</h3>
+                    <p>Master the proven framework: opener, permission, value prop, qualifying questions, and booking the meeting.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Gatekeepers & Access</h3>
+                    <p>Navigate past gatekeepers and reach decision makers using proven strategies that respect everyone's time.</p>
+                </div>
+                <div class="learn-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Qualifying Questions</h3>
+                    <p>Ask the right questions to identify fit, budget, authority, and timing before booking meetings.</p>
                 </div>
                 <div class="learn-card">
                     <i class="fas fa-bullseye"></i>
-                    <h3>The Purpose of a Cold Call</h3>
-                    <p>What are you trying to achieve and why?</p>
+                    <h3>Problem-Focused Pitching</h3>
+                    <p>Lead with the problem you solve, not your features. Create curiosity that drives meeting bookings.</p>
                 </div>
                 <div class="learn-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Objection Handling</h3>
-                    <p>Should you overcome or understand your prospect? How to handle objections without frustrating your prospect and how to move the conversation forward.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-question-circle"></i>
-                    <h3>Questioning Strategies and Active Listening</h3>
-                    <p>What are we trying to discover and how do we discover it? What should we be listening for?</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>The Psychology of a Purchase</h3>
-                    <p>Intellect vs emotion and why you need both.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>A Personalised Company Pitch</h3>
-                    <p>Company specific pitch problem-based pitch.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-sitemap"></i>
-                    <h3>Cold Calling Framework</h3>
-                    <p>Winging it is not an option. Constructing a framework that books meetings.</p>
-                </div>
-                <div class="learn-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>What Learning Cold Calling Can Do For Your Career</h3>
-                    <p>Master the foundational skill that sets top sales professionals apart and opens doors throughout your career.</p>
+                    <p>Handle "not interested," "send me info," and timing objections with confidence and proven frameworks.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2>SDR Training Packages</h2>
+            <div class="pricing-grid">
+                <!-- Intro Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h2 class="pricing-title">Intro</h2>
+                        <p class="pricing-subtitle">See if I'm right for you</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>90 minute intro session on cold calling</span>
+                        </li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-primary">Get in touch for your personal quote</a>
+                    </div>
+                </div>
+
+                <!-- Advanced Package -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h2 class="pricing-title">Advanced</h2>
+                        <p class="pricing-subtitle">Comprehensive training program</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>10 sessions</strong> covering:</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Audit – a look at what is currently happening and being said on the phone</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>The psychology behind making dials – what makes cold calling so difficult and how to overcome the fear?</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cold calling introduction – how to introduce yourself and minimise hang ups. The power of a pattern interrupt.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>The purpose of a cold call. What are you trying to achieve and why?</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Objection handling – should you overcome or understand your prospect? How to handle objections without frustrating your prospect and how to move the conversation forward</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Questioning strategies and active listening. What are we trying to discover and how do we discover it? What should we be listening for?</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>The psychology of a purchase – intellect vs emotion and why you need both</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>A personalised company pitch – company specific pitch problem-based pitch</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cold calling framework – winging it is not an option. Constructing a framework that books meetings.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>What learning the art of cold calling can do for your career.</span>
+                        </li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-primary">Get in touch for your personal quote</a>
+                    </div>
+                </div>
+
+                <!-- All In Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h2 class="pricing-title">All In</h2>
+                        <p class="pricing-subtitle">Complete team transformation</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Everything in Advanced</strong></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Individual rep coaching</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Listen to call recordings to provide feedback</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>1-2-1 sessions with reps to discuss improvement areas</span>
+                        </li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#contact" class="btn btn-primary">Get in touch for your personal quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Form Section -->
     <section id="contact" class="contact">
