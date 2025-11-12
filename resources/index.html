@@ -19,8 +19,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free sales training resources. Cold calling scripts, SDR onboarding guides, objection handling templates, and proven B2B sales frameworks from Australia's cold calling coach.">
-    <title>Free Sales Training Resources - Cold Calling Scripts & SDR Templates | The Sales Guy</title>
+    <meta name="description" content="Real testimonials from sales professionals and teams who have trained with Lee Marshall. See how cold calling coaching transformed their sales performance.">
+    <title>Client Testimonials - Sales Training Success Stories | The Sales Guy Australia</title>
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://thesalesguy.com.au/resources/">
@@ -28,15 +28,15 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thesalesguy.com.au/resources/">
-    <meta property="og:title" content="Free Sales Training Resources - Cold Calling Scripts & SDR Templates">
-    <meta property="og:description" content="Free sales training resources. Cold calling scripts, SDR guides, and proven B2B sales frameworks from Australia's cold calling coach.">
+    <meta property="og:title" content="Client Testimonials - Sales Training Success Stories">
+    <meta property="og:description" content="Real testimonials from sales professionals and teams who have trained with Lee Marshall.">
     <meta property="og:site_name" content="The Sales Guy">
     <meta property="og:locale" content="en_AU">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free Sales Training Resources">
-    <meta name="twitter:description" content="Cold calling scripts, SDR onboarding guides, and proven B2B sales frameworks.">
+    <meta name="twitter:title" content="Client Testimonials - Sales Training Success Stories">
+    <meta name="twitter:description" content="Real results from sales professionals trained by Lee Marshall.">
 
     <!-- Hreflang Tags -->
     <link rel="alternate" hreflang="en-au" href="https://thesalesguy.com.au/resources/">
@@ -48,8 +48,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Resources Page specific styles */
-        .resources-hero {
+        /* Testimonials Page specific styles */
+        .testimonials-hero {
             background: linear-gradient(135deg, var(--secondary-color) 0%, #1a1a1a 100%);
             color: white;
             padding: 160px 0 100px;
@@ -58,7 +58,7 @@
             overflow: hidden;
         }
 
-        .resources-hero::before {
+        .testimonials-hero::before {
             content: '';
             position: absolute;
             top: 0;
@@ -69,12 +69,12 @@
             pointer-events: none;
         }
 
-        .resources-hero-content {
+        .testimonials-hero-content {
             position: relative;
             z-index: 1;
         }
 
-        .resources-hero h1 {
+        .testimonials-hero h1 {
             font-size: 56px;
             font-weight: 900;
             margin-bottom: 24px;
@@ -82,7 +82,7 @@
             line-height: 1.2;
         }
 
-        .resources-hero p {
+        .testimonials-hero p {
             font-size: 20px;
             max-width: 700px;
             margin: 0 auto;
@@ -90,95 +90,120 @@
             line-height: 1.6;
         }
 
-        .resources-intro {
+        .testimonials-section {
             padding: 100px 0;
             background: white;
         }
 
-        .resources-intro-content {
-            max-width: 900px;
-            margin: 0 auto;
+        .testimonials-intro {
+            max-width: 800px;
+            margin: 0 auto 80px;
             text-align: center;
         }
 
-        .resources-intro h2 {
+        .testimonials-intro h2 {
             font-size: 42px;
             font-weight: 900;
             color: var(--secondary-color);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             letter-spacing: -1.2px;
         }
 
-        .resources-intro p {
+        .testimonials-intro p {
             font-size: 18px;
             line-height: 1.8;
             color: var(--text-dark);
-            margin-bottom: 20px;
         }
 
-        .resources-categories {
-            padding: 100px 0;
-            background: var(--bg-light);
-        }
-
-        .resources-categories h2 {
-            text-align: center;
-            font-size: 42px;
-            font-weight: 900;
-            color: var(--secondary-color);
-            margin-bottom: 60px;
-            letter-spacing: -1.2px;
-        }
-
-        .categories-grid {
+        .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            max-width: 1200px;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        .category-card {
+        .testimonial-card {
             background: white;
-            border-radius: 12px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            cursor: pointer;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--primary-color);
+            position: relative;
         }
 
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .category-card i {
-            font-size: 48px;
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 80px;
             color: var(--primary-color);
+            opacity: 0.15;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+        }
+
+        .testimonial-text p {
             margin-bottom: 20px;
         }
 
-        .category-card h3 {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--secondary-color);
-            margin-bottom: 15px;
+        .testimonial-text p:last-child {
+            margin-bottom: 0;
         }
 
-        .category-card p {
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-top: 30px;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), #00a855);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .author-info h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
             font-size: 16px;
-            line-height: 1.6;
             color: var(--text-light);
         }
 
-        .coming-soon {
+        .cta-section {
             padding: 100px 0;
-            background: white;
+            background: var(--bg-light);
             text-align: center;
         }
 
-        .coming-soon h2 {
+        .cta-section h2 {
             font-size: 42px;
             font-weight: 900;
             color: var(--secondary-color);
@@ -186,7 +211,7 @@
             letter-spacing: -1.2px;
         }
 
-        .coming-soon p {
+        .cta-section p {
             font-size: 18px;
             line-height: 1.8;
             color: var(--text-dark);
@@ -194,24 +219,27 @@
             margin: 0 auto 40px;
         }
 
-        .coming-soon .btn {
-            display: inline-block;
-        }
-
         /* Responsive */
         @media (max-width: 968px) {
-            .resources-hero h1 {
+            .testimonials-hero h1 {
                 font-size: 38px;
             }
 
-            .resources-hero p {
+            .testimonials-hero p {
                 font-size: 18px;
             }
 
-            .resources-intro h2,
-            .resources-categories h2,
-            .coming-soon h2 {
+            .testimonials-intro h2,
+            .cta-section h2 {
                 font-size: 32px;
+            }
+
+            .testimonial-card {
+                padding: 35px 25px;
+            }
+
+            .testimonial-text {
+                font-size: 16px;
             }
         }
     </style>
@@ -233,10 +261,9 @@
                 </div>
 
                 <ul class="nav-menu">
-                    
                     <li><a href="/sdr-sales-training/">SDR</a></li>
                     <li><a href="/account-executive-training/">AE</a></li>
-                    <li><a href="/resources/">Resources</a></li>
+                    <li><a href="/resources/">Testimonials</a></li>
                     <li><a href="/blog/">Blog</a></li>
                     <li><a href="/about/">About</a></li>
                     <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
@@ -261,7 +288,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/sdr-sales-training/">SDR</a></li>
                 <li><a href="/account-executive-training/">AE</a></li>
-                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/resources/">Testimonials</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/about/">About</a></li>
                 <li class="mobile-contact">
@@ -281,72 +308,80 @@
         <i class="fas fa-phone"></i>
     </a>
 
-    <!-- Resources Hero -->
-    <section class="resources-hero">
+    <!-- Testimonials Hero -->
+    <section class="testimonials-hero">
         <div class="container">
-            <div class="resources-hero-content">
-                <h1>Sales Resources</h1>
-                <p>Free tips, insights, and strategies to help you improve your sales game.</p>
+            <div class="testimonials-hero-content">
+                <h1>Client Testimonials</h1>
+                <p>Real feedback from sales professionals who have trained with Lee Marshall.</p>
             </div>
         </div>
     </section>
 
-    <!-- Resources Intro -->
-    <section class="resources-intro">
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
         <div class="container">
-            <div class="resources-intro-content">
-                <h2>Learn & Grow</h2>
-                <p>Whether you're an SDR looking to improve your cold calling, an AE working on your closing skills, or a sales leader building your team, you'll find valuable resources here.</p>
-                <p>Check back regularly for new articles, tips, and insights from the field.</p>
+            <div class="testimonials-intro">
+                <h2>What People Are Saying</h2>
+                <p>These testimonials reflect the impact of practical, hands-on sales coaching that focuses on real conversations, genuine connection, and consultative selling.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>I was lucky enough to work directly with Lee during my time at Knowledge Shop, and his coaching completely changed the way I approach sales. Lee doesn't just teach theory; he gives you the tools, mindset, and confidence to perform at a high level.</p>
+
+                            <p>He's one of the few sales mentors who truly leads from the front. He would jump on cold calls himself to show what good looks like, then take the time to coach me through my own calls. He taught me tone and pacing, how to qualify and disqualify prospects effectively, and how to stay detached from outcomes while focusing on uncovering real client problems we could solve.</p>
+
+                            <p>His coaching style is consultative and practical. He teaches you to be nurturing but assertive, to build trust quickly, and to approach every interaction with purpose.</p>
+
+                            <p>The lessons I learned from Lee still shape how I sell today. If you want to improve your performance, sharpen your communication, and build a strong consultative sales mindset, I couldn't recommend Lee more highly.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sales Professional</h4>
+                                <p>Former Knowledge Shop Team Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Yesterday we had an awesome visit from Lee Marshall, who completely shifted the way we think about cold calling.</p>
+
+                            <p>Let's be honest, most people hear "cold calling" and instantly think of rejection or awkward conversations. But Lee broke it down in such a real way. It's not about hammering through a script or trying to sell something to someone who's not interested, it's about starting genuine conversations, understanding people, and creating opportunities through connection.</p>
+
+                            <p>When you focus on curiosity instead of conversion, the whole tone of the call changes. You stop "pitching" and start listening, and that's where the real magic happens.</p>
+
+                            <p>We've already started putting some of Lee's tips into play, and the difference in how we approach our calls (and how people respond) has been huge.</p>
+
+                            <p>Big thanks to Lee Marshall for dropping by and reminding us that cold calling, when done right, is one of the best skill sets you can have in sales.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">T</div>
+                            <div class="author-info">
+                                <h4>Sales Team</h4>
+                                <p>Workshop Participant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Resource Categories -->
-    <section class="resources-categories">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <h2>Browse by Topic</h2>
-            <div class="categories-grid">
-                <div class="category-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Cold Calling Tips</h3>
-                    <p>Practical techniques and mindsets to help you dial with confidence and book more meetings.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Objection Handling</h3>
-                    <p>Turn common objections into opportunities with proven frameworks and responses.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Sales Psychology</h3>
-                    <p>Understand the mental game of sales and how to build unshakeable confidence.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Sales Strategy</h3>
-                    <p>High-level insights on building effective sales processes and leading teams.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Closing Deals</h3>
-                    <p>Learn how to recognize buying signals and confidently ask for the business.</p>
-                </div>
-                <div class="category-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Team Building</h3>
-                    <p>Best practices for hiring, training, and developing high-performing sales teams.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coming Soon -->
-    <section class="coming-soon">
-        <div class="container">
-            <h2>More Resources Coming Soon</h2>
-            <p>I'm working on building out a library of helpful articles, guides, and templates. In the meantime, if you have specific questions or need help with your sales challenges, let's have a conversation.</p>
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <h2>Ready to Transform Your Sales Team?</h2>
+            <p>If you're looking to build confidence, improve cold calling performance, and develop a consultative mindset that gets results, let's have a conversation.</p>
+            <a href="#contact" class="btn btn-primary">Book a Free Consultation</a>
         </div>
     </section>
 
@@ -432,7 +467,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="/sdr-sales-training/">SDR Training</a></li>
                         <li><a href="/account-executive-training/">AE Training</a></li>
-                        <li><a href="/resources/">Resources</a></li>
+                        <li><a href="/resources/">Testimonials</a></li>
                         <li><a href="/about/">About</a></li>
                     </ul>
                 </div>

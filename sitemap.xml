@@ -27,7 +27,7 @@
         <priority>0.9</priority>
     </url>
 
-    <!-- About & Resources -->
+    <!-- About & Testimonials -->
     <url>
         <loc>https://thesalesguy.com.au/about/</loc>
         <lastmod>2025-11-10</lastmod>
@@ -37,9 +37,9 @@
 
     <url>
         <loc>https://thesalesguy.com.au/resources/</loc>
-        <lastmod>2025-11-10</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <lastmod>2025-11-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- Blog Hub -->
