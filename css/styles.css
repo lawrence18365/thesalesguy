@@ -19,6 +19,11 @@
     --accent-green: #00FF7F;
 }
 
+html {
+    background: var(--secondary-color);
+    overscroll-behavior: none;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -26,6 +31,7 @@ body {
     background: var(--bg-white);
     overflow-x: hidden;
     padding-top: 76px;
+    overscroll-behavior-y: none;
 }
 
 .container {
