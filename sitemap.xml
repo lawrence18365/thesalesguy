@@ -45,21 +45,35 @@
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>2025-11-10</lastmod>
+        <lastmod>2025-11-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts - Organized in /blog/ folder -->
     <url>
-        <loc>https://thesalesguy.com.au/blog/cold-calling-benefits/</loc>
+        <loc>https://thesalesguy.com.au/blog/stop-begging-for-meetings/</loc>
+        <lastmod>2025-11-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/always-on-sales-myth/</loc>
+        <lastmod>2025-11-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/aim-high-cold-calling-strategy/</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
 
     <url>
-        <loc>https://thesalesguy.com.au/blog/overcome-call-reluctance/</loc>
+        <loc>https://thesalesguy.com.au/blog/cold-calling-benefits/</loc>
         <lastmod>2025-11-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -73,15 +87,8 @@
     </url>
 
     <url>
-        <loc>https://thesalesguy.com.au/blog/aim-high-cold-calling-strategy/</loc>
+        <loc>https://thesalesguy.com.au/blog/overcome-call-reluctance/</loc>
         <lastmod>2025-11-10</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://thesalesguy.com.au/blog/always-on-sales-myth/</loc>
-        <lastmod>2025-11-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
