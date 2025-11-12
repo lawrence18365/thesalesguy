@@ -1,3 +1,7 @@
+<!-- Skip link for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Header -->
 <header class="site-header">
     <div class="container">
         <nav class="main-nav">
@@ -6,19 +10,51 @@
                     <span class="logo-text">THE SALES GUY</span>
                 </a>
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="companies.html">Companies</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="library.html">Resources</a></li>
+                <li><a href="sdr.html">SDR</a></li>
+                <li><a href="ae.html">AE</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
             </ul>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>
     </div>
 </header>
+
+<!-- Mobile Navigation Overlay -->
+<div class="mobile-nav-overlay">
+    <div class="mobile-nav-content">
+        <button class="mobile-nav-close" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sdr.html">SDR</a></li>
+            <li><a href="ae.html">AE</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="mobile-contact">
+                <a href="tel:0478409161" class="mobile-phone">
+                    <i class="fas fa-phone"></i> 0478 409 161
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="btn btn-primary btn-mobile">Get Started</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Floating Call Button -->
+<a href="tel:0478409161" class="floating-call-button" aria-label="Call us">
+    <i class="fas fa-phone"></i>
+</a>

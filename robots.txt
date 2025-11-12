@@ -1,0 +1,11 @@
+# robots.txt for The Sales Guy
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thesalesguy.com.au/sitemap.xml
+
+# Crawl delay (optional - prevents aggressive crawling)
+Crawl-delay: 1

@@ -34,6 +34,26 @@ body {
     padding: 0 20px;
 }
 
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 10000;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--accent-green);
+    outline-offset: 3px;
+}
+
 /* ===========================
    HEADER
    =========================== */
@@ -88,8 +108,15 @@ body {
     letter-spacing: 0.2px;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu a:focus {
     color: var(--primary-color);
+}
+
+.nav-menu a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: 3px;
 }
 
 .btn-nav {
@@ -387,10 +414,16 @@ body {
     color: white;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
     background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 214, 107, 0.3);
+}
+
+.btn-primary:focus {
+    outline: 3px solid var(--accent-green);
+    outline-offset: 3px;
 }
 
 .btn-secondary {
@@ -624,9 +657,15 @@ body {
     transition: opacity 0.4s ease;
 }
 
-.problem-card:hover {
+.problem-card:hover,
+.problem-card:focus-within {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.problem-card:focus-within {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
 }
 
 .problem-card:hover::before {
@@ -782,9 +821,15 @@ body {
     transition-delay: 0.1s;
 }
 
-.timeline-content:hover {
+.timeline-content:hover,
+.timeline-item:focus-within .timeline-content {
     transform: translateY(-5px) scale(1);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-item:focus-within .timeline-content {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
 }
 
 /* Timeline numbers */
@@ -1190,7 +1235,8 @@ body {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
     border-color: var(--primary-color);
 }
 
@@ -1322,6 +1368,20 @@ body {
 
 .footer-links a:hover {
     color: var(--primary-color);
+}
+
+/* ===========================
+   SCROLL ANIMATIONS
+   =========================== */
+.animate-ready {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ===========================
