@@ -53,12 +53,19 @@
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts - Organized in /blog/ folder -->
+    <url>
+        <loc>https://thesalesguy.com.au/blog/cold-calling-case-study/</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <url>
         <loc>https://thesalesguy.com.au/blog/stop-begging-for-meetings/</loc>
         <lastmod>2025-11-12</lastmod>
