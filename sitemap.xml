@@ -53,12 +53,26 @@
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>2025-11-13</lastmod>
+        <lastmod>2025-11-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts - Organized in /blog/ folder -->
+    <url>
+        <loc>https://thesalesguy.com.au/blog/death-of-sales-proposal/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/sales-excuses-translator/</loc>
+        <lastmod>2025-11-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <url>
         <loc>https://thesalesguy.com.au/blog/cold-calling-case-study/</loc>
         <lastmod>2025-11-13</lastmod>
