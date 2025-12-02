@@ -45,7 +45,7 @@
     <!-- Author Page -->
     <url>
         <loc>https://thesalesguy.com.au/author/lee-marshall.html</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -53,12 +53,19 @@
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>2025-11-22</lastmod>
+        <lastmod>2025-11-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts - Organized in /blog/ folder -->
+    <url>
+        <loc>https://thesalesguy.com.au/blog/proud-to-work-in-sales/</loc>
+        <lastmod>2025-11-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <url>
         <loc>https://thesalesguy.com.au/blog/overcoming-objections-cold-calling/</loc>
         <lastmod>2025-11-22</lastmod>
