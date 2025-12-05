@@ -53,12 +53,26 @@
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>2025-11-23</lastmod>
+        <lastmod>2025-12-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts - Organized in /blog/ folder -->
+    <url>
+        <loc>https://thesalesguy.com.au/blog/how-to-hire-sales-trainer/</loc>
+        <lastmod>2025-12-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/stop-using-qualification-checklists/</loc>
+        <lastmod>2025-12-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
     <url>
         <loc>https://thesalesguy.com.au/blog/proud-to-work-in-sales/</loc>
         <lastmod>2025-11-23</lastmod>
