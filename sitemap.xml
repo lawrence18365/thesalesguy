@@ -140,6 +140,12 @@
 
     <!-- Blog Posts - Organized in /blog/ folder -->
     <url>
+        <loc>https://thesalesguy.com.au/blog/100-emails-0-calls/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://thesalesguy.com.au/blog/is-cold-calling-dead-2026/</loc>
         <lastmod>2026-01-05</lastmod>
         <changefreq>monthly</changefreq>
