@@ -140,6 +140,12 @@
 
     <!-- Blog Posts - Organized in /blog/ folder -->
     <url>
+        <loc>https://thesalesguy.com.au/blog/relationship-selling-myth/</loc>
+        <lastmod>2026-02-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://thesalesguy.com.au/blog/cold-call-training-nothing-to-lose/</loc>
         <lastmod>2026-02-05</lastmod>
         <changefreq>monthly</changefreq>
