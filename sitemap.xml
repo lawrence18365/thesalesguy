@@ -333,7 +333,70 @@
         <priority>0.6</priority>
     </url>
 
-    <!-- Legal Pages -->
+    <url>
+        <loc>https://thesalesguy.com.au/blog/ban-laptops-cold-call-training/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/hiring-sales-team-sydney/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/why-sending-donuts-is-dead/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/how-to-handle-rejection-in-sales/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/cold-calling-not-scary/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/book-more-meetings-via-cold-call/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/learn-outbound-sales-or-be-in-sales-hell-forever/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/cold-call-training-getting-a-meeting-wrong-goal/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/cold-call-training-sydney-how-i-help-sales-teams-win/</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+<!-- Legal Pages -->
     <url>
         <loc>https://thesalesguy.com.au/privacy/</loc>
         <lastmod>2025-11-10</lastmod>
