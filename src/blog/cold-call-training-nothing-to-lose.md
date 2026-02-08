@@ -1,12 +1,12 @@
 ---
 layout: layouts/blog-post.njk
-title: "Cold Call Training | The Sales Guy"
+title: "You Have Nothing to Lose by Cold Calling | The Sales Guy"
 description: "Why you have nothing to lose by cold calling. Learn why the risk is zero and the reward is limitless."
 date: 2026-01-21
 category: "Cold Call Training"
 readingTime: "4 min read"
 excerpt: "Why you have nothing to lose by cold calling. Learn why the risk is zero and the reward is limitless."
-breadcrumb: "You Have Nothing to Lose and Everything to Gain"
+breadcrumb: "Nothing to Lose by Cold Calling"
 keywords: "cold calling mindset, sales motivation, overcoming fear, sdr training"
 permalink: /blog/cold-call-training-nothing-to-lose/
 ---
