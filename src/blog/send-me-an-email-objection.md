@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "\"Send Me an Email\": Why You Get This Objection and How to Stop It"
 description: "Stop hearing 'Send me an email' and start booking meetings. Learn why this objection happens upstream and how to fix your pitch to stop it."
-date: 2025-12-19
+date: 2025-12-17
 category: "Objection Handling"
 readingTime: "4 min read"
 excerpt: "Stop hearing 'Send me an email' and start booking meetings. Learn why this objection happens upstream and how to fix your pitch to stop it."

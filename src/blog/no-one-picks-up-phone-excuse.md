@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "No One Picks Up The Phone Anymore: The Excuse Killing Your Sales"
 description: "Stop using 'no one picks up' as an excuse. Learn the data-backed truth about cold calling connect rates and how top performers book 5+ meetings daily."
-date: 2026-02-08
+date: 2026-02-06
 category: "Cold Calling"
 readingTime: "10 min read"
 excerpt: "Stop using 'no one picks up' as an excuse. Learn the data-backed truth about cold calling connect rates and how top performers book 5+ meetings daily."

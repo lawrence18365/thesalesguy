@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "Why Relying on Inbound Leads Is Killing Your Sales"
 description: "Stop waiting for prospects to come to you. Learn why outbound sales gives you control, better margins, and access to decision-makers that inbound marketing never will."
-date: 2026-02-08
+date: 2026-02-07
 category: "Outbound Sales"
 readingTime: "7 min read"
 excerpt: "Stop waiting for prospects to come to you. Learn why outbound sales gives you control, better margins, and access to decision-makers that inbound marketing never will."

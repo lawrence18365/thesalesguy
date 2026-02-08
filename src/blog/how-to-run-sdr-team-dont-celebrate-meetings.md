@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "How to Run an SDR Team: Why I Don't Celebrate Meetings Booked"
 description: "Why celebrating 'meetings booked' hurts your SDR team. Learn the 5 qualification questions every meeting must pass to drive real revenue."
-date: 2026-01-25
+date: 2026-01-24
 category: "Sales Management"
 readingTime: "4 min read"
 excerpt: "Why celebrating 'meetings booked' hurts your SDR team. Learn the 5 qualification questions every meeting must pass to drive real revenue."

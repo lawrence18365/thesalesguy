@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "The \"Relationship Selling\" Myth | The Sales Guy"
 description: "Why 'relationship selling' is a myth. Learn why your prospect doesn't need to like you to buy from you, and why competence beats friendship."
-date: 2026-01-25
+date: 2026-01-23
 category: "Sales Mindset"
 readingTime: "4 min read"
 excerpt: "Why 'relationship selling' is a myth. Learn why your prospect doesn't need to like you to buy from you, and why competence beats friendship."

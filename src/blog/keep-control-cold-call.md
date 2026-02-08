@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "How to Keep Control of a Cold Call | The Sales Guy"
 description: "Learn how to maintain control of your cold calls by answering questions with questions. Discover the 'reverse' technique and stop being an interrogation victim."
-date: 2025-12-19
+date: 2025-12-18
 category: "Cold Calling"
 readingTime: "4 min read"
 excerpt: "Learn how to maintain control of your cold calls by answering questions with questions. Discover the 'reverse' technique and stop being an interrogation victim."

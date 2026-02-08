@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "Disqualify Early: Why I Turned Down a Coffee Meeting"
 description: "Why disqualifying early is crucial in sales. Learn why I turned down a coffee meeting to focus on revenue generating activities."
-date: 2026-01-25
+date: 2026-01-22
 category: "Sales Strategy"
 readingTime: "4 min read"
 excerpt: "Why disqualifying early is crucial in sales. Learn why I turned down a coffee meeting to focus on revenue generating activities."

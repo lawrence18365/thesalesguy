@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "Cold Call Training | The Sales Guy"
 description: "Why you have nothing to lose by cold calling. Learn why the risk is zero and the reward is limitless."
-date: 2026-01-25
+date: 2026-01-21
 category: "Cold Call Training"
 readingTime: "4 min read"
 excerpt: "Why you have nothing to lose by cold calling. Learn why the risk is zero and the reward is limitless."
