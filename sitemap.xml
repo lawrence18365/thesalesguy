@@ -403,6 +403,20 @@
         <priority>0.6</priority>
     </url>
 
+    <url>
+        <loc>https://thesalesguy.com.au/blog/no-one-picks-up-phone-excuse/</loc>
+        <lastmod>2026-02-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://thesalesguy.com.au/blog/how-to-handle-rejection-sales-pro/</loc>
+        <lastmod>2026-02-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 <!-- Legal Pages -->
     <url>
         <loc>https://thesalesguy.com.au/privacy/</loc>
