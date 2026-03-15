@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "Cold Call Training: Why Objection Handling is Not the Problem"
 description: "Most cold call objections are a symptom of a bad opening. Learn why fixing the start of the call eliminates objections before they happen."
-date: 2026-03-30
+date: 2026-03-07
 category: "Cold Calling"
 readingTime: "2 min read"
 excerpt: "Most cold call objections are a symptom of a bad opening. Learn why fixing the start of the call eliminates objections before they happen."
