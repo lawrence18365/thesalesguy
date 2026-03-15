@@ -1,6 +1,6 @@
 ---
 layout: layouts/blog-post.njk
-title: "You Don't Have a Closing Problem, You Have a Qualification Problem | The Sales Guy"
+title: "You Don't Have a Closing Problem, You Have a Qualification Problem"
 description: "If your sales team is booking meetings but failing to convert, you probably don't have a closing problem. You have a cold calling and qualification problem."
 date: 2026-03-08
 category: "Sales Strategy"

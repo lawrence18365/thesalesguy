@@ -1,6 +1,6 @@
 ---
 layout: layouts/blog-post.njk
-title: "Why Salespeople Are Too Risk-Averse (And How to Fix It) | The Sales Guy"
+title: "Why Salespeople Are Too Risk-Averse (And How to Fix It)"
 description: "Salespeople dread making calls because they focus on what can go wrong. Here is why taking the risk is the only way to succeed in sales."
 date: 2026-03-15
 category: "Mindset"

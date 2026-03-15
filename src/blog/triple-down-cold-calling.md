@@ -1,6 +1,6 @@
 ---
 layout: layouts/blog-post.njk
-title: "Why You Need to Triple Down on Cold Calling | The Sales Guy"
+title: "Why You Need to Triple Down on Cold Calling"
 description: "Some 'gurus' are telling SDRs and AEs to stop cold calling. If you want to keep your job and control your income, you need to do the exact opposite."
 date: 2026-03-14
 category: "Cold Calling"
