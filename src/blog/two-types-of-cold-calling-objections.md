@@ -2,7 +2,7 @@
 layout: layouts/blog-post.njk
 title: "The Only Two Types of Cold Calling Objections | The Sales Guy"
 description: "When cold calling, there are only two types of objections: reflex objections, and objections made up by the salesperson. Here is how to handle both."
-date: 2026-03-15
+date: 2026-03-12
 category: "Objection Handling"
 readingTime: "3 min read"
 excerpt: "When cold calling, there are only two types of objections: reflex objections, and objections made up by the salesperson. Here is how to handle both."
