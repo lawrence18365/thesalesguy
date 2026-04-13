@@ -15,7 +15,7 @@ permalink: /blog/cold-calling-benefits/
 
                 <p>Many sales leaders just tell their team to make more calls. It's the lowest form of management.</p>
 
-                <p>The good ones will actually train. They'll run sessions on the basics: <a href="#">objection handling</a>, script refinement, or discovery questions. This is better, but it's still fundamentally missing the point.</p>
+                <p>The good ones will actually train. They'll run sessions on the basics: <a href="/blog/overcoming-objections-cold-calling/">objection handling</a>, script refinement, or discovery questions. This is better, but it's still fundamentally missing the point.</p>
 
                 <p>But I've yet to meet a sales leader who truly tells their team what learning to cold call can do for their career.</p>
 
@@ -53,7 +53,7 @@ permalink: /blog/cold-calling-benefits/
 
                 <p>A person who can pick up a phone, articulate a new product's value to a cold audience, and book a meeting is not just an employee; they are a one-person growth engine. In a start-up, that person is the most valuable player in the entire company.</p>
 
-                <p>While others need the safety net of <a href="#">marketing-generated leads</a>, you can walk into a high-risk, high-reward environment and write your own ticket. The rewards in start-ups the equity, the experience, the impact are always much higher for those who can build the plane while it's in the air.</p>
+                <p>While others need the safety net of <a href="/blog/inbound-vs-outbound-sales-control/">marketing-generated leads</a>, you can walk into a high-risk, high-reward environment and write your own ticket. The rewards in start-ups the equity, the experience, the impact are always much higher for those who can build the plane while it's in the air.</p>
 
                 <h2>3. You Acquire the Ultimate Skillset for Entrepreneurship</h2>
 
@@ -103,7 +103,7 @@ permalink: /blog/cold-calling-benefits/
 
                 <p>And here's the best part: it's only going to get easier to stand out.</p>
 
-                <p>As everyone else becomes lazy, playing with <a href="#">AI-generated email sequences</a> and relying on automation, the human-to-human connection becomes the ultimate competitive advantage. The person who is willing to do what is hard to pick up the phone and have a real conversation will own the next decade.</p>
+                <p>As everyone else becomes lazy, playing with <a href="/blog/warm-call-delusion/">AI-generated email sequences</a> and relying on automation, the human-to-human connection becomes the ultimate competitive advantage. The person who is willing to do what is hard to pick up the phone and have a real conversation will own the next decade.</p>
 
                 <p><strong>So, to the sales leaders:</strong> Start motivating your team properly. Stop talking about dials. Start talking about their future.</p>
 

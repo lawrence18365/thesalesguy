@@ -128,7 +128,7 @@ eleventyExcludeFromCollections: true
 
     <!-- Author Page -->
     <url>
-        <loc>https://thesalesguy.com.au/author/lee-marshall.html</loc>
+        <loc>https://thesalesguy.com.au/author/lee-marshall/</loc>
         <lastmod>2025-11-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -137,7 +137,7 @@ eleventyExcludeFromCollections: true
     <!-- Blog Hub -->
     <url>
         <loc>https://thesalesguy.com.au/blog/</loc>
-        <lastmod>{{ collections.blogPosts[0].date | isoDate }}</lastmod>
+        <lastmod>{{ (collections.blogPosts[0].data.lastmod or collections.blogPosts[0].date) | isoDate }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -146,7 +146,7 @@ eleventyExcludeFromCollections: true
     {% for post in collections.blogPosts %}
     <url>
         <loc>https://thesalesguy.com.au{{ post.url }}</loc>
-        <lastmod>{{ post.date | isoDate }}</lastmod>
+        <lastmod>{{ (post.data.lastmod or post.date) | isoDate }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

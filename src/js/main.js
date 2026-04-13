@@ -13,11 +13,22 @@ document.addEventListener('DOMContentLoaded', function() {
     initTimelineAnimations();
 
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const hash = this.getAttribute('href');
+            if (!hash || hash.length < 2) {
+                return;
+            }
+
+            let target = null;
+            try {
+                target = document.querySelector(hash);
+            } catch (error) {
+                return;
+            }
+
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'

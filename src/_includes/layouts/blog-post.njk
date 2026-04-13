@@ -625,7 +625,7 @@
     <section class="article-content">
         <div class="container">
             <article class="article-body">
-                {{ content | safe }}
+                {{ content | cleanArticleHtml | safe }}
             </article>
         </div>
     </section>
@@ -871,7 +871,7 @@
             }
         },
         "datePublished": "{{ date | isoDate }}",
-        "dateModified": "{{ date | isoDate }}",
+        "dateModified": "{{ (lastmod or date) | isoDate }}",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://thesalesguy.com.au{{ page.url }}"

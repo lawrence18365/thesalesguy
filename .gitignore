@@ -34,3 +34,6 @@ logs/
 .cache/
 .temp/
 .tmp/
+
+# Internal workflow docs (not public content)
+BLOGGING.md
