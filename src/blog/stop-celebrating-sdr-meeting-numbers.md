@@ -3,13 +3,18 @@ layout: layouts/blog-post.njk
 title: "Stop Celebrating SDR Meeting Numbers. Meetings Do Not Matter, Revenue Does."
 description: "SDR meeting numbers look good on LinkedIn. But if the meetings are not qualified, you are just filling calendars with hope."
 date: 2026-05-04
-lastmod: 2026-05-07
+lastmod: 2026-05-25
 category: "Sales Strategy"
 readingTime: "3 min read"
 excerpt: "SDR meeting numbers look good on LinkedIn. But if the meetings are not qualified, you are just filling calendars with hope."
 breadcrumb: "SDR Meeting Numbers"
 keywords: "SDR meeting numbers, qualified meetings, SDR metrics, sales meetings, outbound sales metrics, SDR sales training"
 permalink: /blog/stop-celebrating-sdr-meeting-numbers/
+source: "LinkedIn"
+linkedinActivityId: "7457179759316451328"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7457179759316451328/"
+linkedinPostedAt: "2026-05-05T07:30:02+10:00"
+importedAt: "2026-05-07"
 ---
 
 <p>Fractional SDRs love these posts.</p>

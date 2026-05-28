@@ -3,13 +3,18 @@ layout: layouts/blog-post.njk
 title: "Cold Calling Needs Business Acumen, Not Fancy Pattern Interrupts"
 description: "Cold calling needs business acumen. If your team cannot spot the real problem behind an objection, they leave meetings behind."
 date: 2026-05-05
-lastmod: 2026-05-07
+lastmod: 2026-05-25
 category: "Cold Calling"
 readingTime: "3 min read"
 excerpt: "Cold calling needs business acumen. If your team cannot spot the real problem behind an objection, they leave meetings behind."
 breadcrumb: "Business Acumen"
 keywords: "business acumen in sales, cold calling business acumen, sales prospecting training, cold call training, SDR sales training"
 permalink: /blog/cold-calling-business-acumen/
+source: "LinkedIn"
+linkedinActivityId: "7457545928556691457"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7457545928556691457/"
+linkedinPostedAt: "2026-05-06T07:45:03+10:00"
+importedAt: "2026-05-07"
 ---
 
 <p>I never hear sales trainers or managers talk about how important business acumen is when it comes to prospecting.</p>
