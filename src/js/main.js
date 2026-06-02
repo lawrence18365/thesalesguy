@@ -95,8 +95,13 @@ document.addEventListener('DOMContentLoaded', function() {
 function trackAnalyticsEvent(eventName, parameters = {}) {
     const eventParameters = {
         page_path: window.location.pathname,
+        send_to: GA4_MEASUREMENT_ID,
         ...parameters
     };
+
+    if (new URLSearchParams(window.location.search).has('codex_ga4_debug')) {
+        eventParameters.debug_mode = true;
+    }
 
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
