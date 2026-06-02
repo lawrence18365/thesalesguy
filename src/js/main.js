@@ -137,12 +137,7 @@ function ensureDirectGa4Tag() {
 
         const existingScript = document.querySelector(`script[src*="gtag/js?id=${GA4_MEASUREMENT_ID}"]`);
         if (existingScript) {
-            if (existingScript.dataset.loaded === 'true') {
-                configureTag();
-            } else {
-                existingScript.addEventListener('load', configureTag, { once: true });
-                existingScript.addEventListener('error', configureTag, { once: true });
-            }
+            configureTag();
             return;
         }
 
