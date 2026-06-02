@@ -1,3 +1,5 @@
+const GA4_MEASUREMENT_ID = 'G-08HPNCHLSP';
+
 // Initialize page functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize mobile menu
@@ -102,9 +104,32 @@ function trackAnalyticsEvent(eventName, parameters = {}) {
         ...eventParameters
     });
 
+    ensureDirectGa4Tag();
+
     if (typeof window.gtag === 'function') {
         window.gtag('event', eventName, eventParameters);
     }
+}
+
+function ensureDirectGa4Tag() {
+    if (typeof window.gtag === 'function') {
+        return;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() {
+        window.dataLayer.push(arguments);
+    };
+
+    if (!document.querySelector(`script[src*="gtag/js?id=${GA4_MEASUREMENT_ID}"]`)) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+    }
+
+    window.gtag('js', new Date());
+    window.gtag('config', GA4_MEASUREMENT_ID, { send_page_view: false });
 }
 
 function initAnalyticsTracking() {
