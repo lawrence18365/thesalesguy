@@ -50,6 +50,8 @@ permalink: /blog/cold-call-openers-are-the-easy-part/
 
 <p>They accept smokescreens.</p>
 
+<p>The better reps connect the opener to a problem, then ask <a href="/blog/cold-call-qualification-questions-context/">qualification questions that feel earned</a> rather than running through a checklist.</p>
+
 <p>Then they go back to LinkedIn looking for another magic opener.</p>
 
 <h2>A Fancy Cold Call Opener Does Not Teach the Call</h2>

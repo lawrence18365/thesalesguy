@@ -121,4 +121,6 @@ importedAt: "2026-05-28"
 
 <p>It only dies when salespeople convince themselves not to pick up the phone.</p>
 
-<p>If your team is feeding itself excuses before every call block, our <a href="/cold-call-training/">Cold Call Training</a> helps reps build the mindset, structure, and repetition needed to create real outbound opportunities.</p>
+<p>If your team is feeding itself excuses before every call block, our <a href="/sdr-sales-training/">SDR Sales Training</a> helps reps build the mindset, structure, and repetition needed to create real outbound opportunities.</p>
+
+<p>Start by making the call easier to run: lead with a real business problem, ask <a href="/blog/cold-call-qualification-questions-context/">qualification questions with context</a>, and stop judging SDRs by <a href="/blog/stop-measuring-sdrs-meeting-targets-alone/">meeting targets alone</a>.</p>

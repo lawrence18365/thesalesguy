@@ -68,6 +68,8 @@ importedAt: "2026-05-07"
 
 <p>Not "they were nice on the phone."</p>
 
+<p>If leaders want stronger outcomes, they need to stop measuring SDRs by <a href="/blog/stop-measuring-sdrs-meeting-targets-alone/">meeting targets alone</a> and start coaching the call behaviours that create qualified opportunities.</p>
+
 <p>Not "they accepted the invite."</p>
 
 <p>Not "they said they were happy to learn more."</p>

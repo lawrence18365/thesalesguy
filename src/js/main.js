@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize timeline scroll animations
     initTimelineAnimations();
 
+    // Initialize lead and CTA analytics events
+    initAnalyticsTracking();
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -64,6 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (response.ok) {
                     formStatus.className = 'form-status success';
                     formStatus.textContent = 'Thanks for your message! We\'ll be in touch soon.';
+                    trackAnalyticsEvent('generate_lead', {
+                        form_id: this.id || 'contact-form',
+                        form_name: this.getAttribute('name') || 'Contact form'
+                    });
+                    trackAnalyticsEvent('contact_form_submit', {
+                        form_id: this.id || 'contact-form'
+                    });
                     this.reset();
                     submitButton.textContent = 'Send Message';
                     submitButton.disabled = false;
@@ -79,6 +89,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function trackAnalyticsEvent(eventName, parameters = {}) {
+    const eventParameters = {
+        page_path: window.location.pathname,
+        ...parameters
+    };
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: eventName,
+        ...eventParameters
+    });
+
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, eventParameters);
+    }
+}
+
+function initAnalyticsTracking() {
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('input', function() {
+            trackAnalyticsEvent('contact_form_start', {
+                form_id: this.id || 'contact-form'
+            });
+        }, { once: true });
+    }
+
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            trackAnalyticsEvent('phone_click', {
+                link_url: this.getAttribute('href'),
+                link_text: this.textContent.trim() || this.getAttribute('aria-label') || 'Phone'
+            });
+        });
+    });
+
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function() {
+            trackAnalyticsEvent('email_click', {
+                link_url: this.getAttribute('href'),
+                link_text: this.textContent.trim() || 'Email'
+            });
+        });
+    });
+
+    document.querySelectorAll('a.btn, a[href="#contact"], a.floating-call-button').forEach(link => {
+        link.addEventListener('click', function() {
+            trackAnalyticsEvent('cta_click', {
+                link_url: this.getAttribute('href'),
+                link_text: this.textContent.trim() || this.getAttribute('aria-label') || 'CTA'
+            });
+        });
+    });
+}
 
 // Hide header on scroll down, show on scroll up
 function initHideOnScroll() {

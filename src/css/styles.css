@@ -1583,6 +1583,30 @@ body {
     gap: 8px;
 }
 
+.training-options {
+    background: white;
+}
+
+.service-area-links {
+    max-width: 900px;
+    margin: 36px auto 0;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.service-area-links a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0, 214, 107, 0.25);
+}
+
+.service-area-links a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
 @media (max-width: 968px) {
     .related-resources h2 {
         font-size: 32px;

@@ -630,6 +630,24 @@
         </div>
     </section>
 
+    <section class="related-resources">
+        <div class="container">
+            <h2>Latest Sales Training Articles</h2>
+            <p class="section-intro">Recent practical reads on cold calling, qualification, SDR coaching, and sales team behaviour.</p>
+            <div class="resources-grid">
+                {% for post in collections.blogPosts %}
+                {% if loop.index <= 6 %}
+                <article class="resource-card">
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="resource-link">Read Article -></a>
+                </article>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
     <!-- Share Section -->
     <section class="article-share">
         <div class="container">

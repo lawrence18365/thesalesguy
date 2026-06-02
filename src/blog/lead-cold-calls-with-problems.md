@@ -44,6 +44,8 @@ permalink: /blog/lead-cold-calls-with-problems/
 
 <p>If your opener does not connect to that, it is just noise.</p>
 
+<p>That is why <a href="/blog/qualified-b2b-sales-conversations-start-with-problem/">qualified B2B sales conversations start with a problem</a>. The problem gives the call a reason to exist before the rep starts asking for time.</p>
+
 <h2>Most Salespeople Do Not Know What Problem They Solve</h2>
 
 <p>Salespeople often have no idea what problems they solve and how those problems resonate in the prospect's world.</p>
