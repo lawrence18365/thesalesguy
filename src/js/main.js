@@ -109,32 +109,63 @@ function trackAnalyticsEvent(eventName, parameters = {}) {
         ...eventParameters
     });
 
-    ensureDirectGa4Tag();
-
-    if (typeof window.gtag === 'function') {
-        window.gtag('event', eventName, eventParameters);
-    }
+    sendDirectGa4Event(eventName, eventParameters);
 }
 
 function ensureDirectGa4Tag() {
-    if (typeof window.gtag === 'function') {
-        return;
+    if (window.__directGa4ReadyPromise) {
+        return window.__directGa4ReadyPromise;
     }
 
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function() {
-        window.dataLayer.push(arguments);
-    };
 
-    if (!document.querySelector(`script[src*="gtag/js?id=${GA4_MEASUREMENT_ID}"]`)) {
+    if (typeof window.gtag !== 'function') {
+        window.gtag = function() {
+            window.dataLayer.push(arguments);
+        };
+    }
+
+    window.__directGa4ReadyPromise = new Promise((resolve) => {
+        const configureTag = () => {
+            if (!window.__directGa4Configured) {
+                window.gtag('js', new Date());
+                window.gtag('config', GA4_MEASUREMENT_ID, { send_page_view: false });
+                window.__directGa4Configured = true;
+            }
+            resolve();
+        };
+
+        const existingScript = document.querySelector(`script[src*="gtag/js?id=${GA4_MEASUREMENT_ID}"]`);
+        if (existingScript) {
+            if (existingScript.dataset.loaded === 'true') {
+                configureTag();
+            } else {
+                existingScript.addEventListener('load', configureTag, { once: true });
+                existingScript.addEventListener('error', configureTag, { once: true });
+            }
+            return;
+        }
+
         const script = document.createElement('script');
         script.async = true;
         script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
+        script.addEventListener('load', () => {
+            script.dataset.loaded = 'true';
+            configureTag();
+        }, { once: true });
+        script.addEventListener('error', configureTag, { once: true });
         document.head.appendChild(script);
-    }
+    });
 
-    window.gtag('js', new Date());
-    window.gtag('config', GA4_MEASUREMENT_ID, { send_page_view: false });
+    return window.__directGa4ReadyPromise;
+}
+
+function sendDirectGa4Event(eventName, eventParameters) {
+    ensureDirectGa4Tag().then(() => {
+        if (typeof window.gtag === 'function') {
+            window.gtag('event', eventName, eventParameters);
+        }
+    });
 }
 
 function initAnalyticsTracking() {
