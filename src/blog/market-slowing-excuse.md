@@ -2,13 +2,19 @@
 layout: layouts/blog-post.njk
 title: "'The Market Is Slowing Down' Is the Lazy Salesperson's Favorite"
 description: "Stop blaming the market for poor sales performance. Diagnose weak prospecting habits and refocus on controllable inputs."
-date: 2025-11-21
+date: 2026-06-03
+lastmod: 2026-06-11
 category: "Sales Mindset"
 readingTime: "5 min read"
 excerpt: "Stop blaming the market for poor sales performance. Diagnose weak prospecting habits and refocus on controllable inputs."
 breadcrumb: "The Market Is Slowing Down Excuse"
 keywords: "sales excuses, market conditions, cold calling, sales mindset, sales performance, sales leadership, economic downturn, B2B sales, SDR training, sales accountability"
 permalink: /blog/market-slowing-excuse/
+source: "LinkedIn"
+linkedinActivityId: "7467755889962217472"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7467755889962217472/"
+linkedinPostedAt: "2026-06-03T11:55:48+10:00"
+importedAt: "2026-06-11"
 ---
 
 <p>"The market is slowing down."</p>
